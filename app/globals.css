@@ -1,0 +1,142 @@
+@import "tailwindcss";
+
+/* ===================== DESIGN TOKENS ===================== */
+@theme {
+  --color-canvas: #15130f;
+  --color-canvas-alt: #1c1912;
+  --color-panel: #221e16;
+  --color-bone: #ede6d6;
+  --color-bone-dim: #a79c87;
+  --color-corner-red: #c6362b;
+  --color-corner-red-dim: #8f2820;
+  --color-corner-blue: #35586e;
+  --color-corner-blue-dim: #213b4a;
+  --color-brass: #b08947;
+  --color-brass-bright: #d9b579;
+  --color-hairline: rgba(237, 230, 214, 0.12);
+
+  --font-sans: "Work Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Anton", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Space Mono", ui-monospace, monospace;
+}
+
+/* ===================== BASE ===================== */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-canvas);
+  color: var(--color-bone);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--color-corner-red);
+  color: var(--color-bone);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-brass-bright);
+  outline-offset: 3px;
+}
+
+.font-display {
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.font-mono {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+/* Subtle film-grain overlay used behind hero/canvas sections */
+.grain::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.05;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.45'/%3E%3C/svg%3E");
+}
+
+/* ===================== MARQUEE ===================== */
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-track {
+  display: inline-flex;
+  align-items: center;
+  width: max-content;
+  animation: marquee-scroll 32s linear infinite;
+  will-change: transform;
+}
+
+.marquee-track-reverse {
+  animation-direction: reverse;
+  animation-duration: 40s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none;
+  }
+}
+
+/* ===================== COMPONENTS ===================== */
+.btn-primary {
+  @apply inline-flex items-center justify-center gap-2 border border-corner-red bg-corner-red px-7 py-4 font-mono text-xs uppercase tracking-wide text-bone transition-all duration-200 hover:-translate-y-0.5 hover:bg-corner-red-dim disabled:opacity-60 disabled:hover:translate-y-0;
+}
+
+.btn-ghost {
+  @apply inline-flex items-center justify-center gap-2 border border-brass px-7 py-4 font-mono text-xs uppercase tracking-wide text-bone transition-all duration-200 hover:-translate-y-0.5 hover:bg-brass/10;
+}
+
+.input {
+  @apply w-full border border-hairline bg-canvas px-4 py-3 text-sm text-bone outline-none transition-colors focus:border-brass;
+}
+
+.input::placeholder {
+  color: var(--color-bone-dim);
+  opacity: 0.7;
+}
+
+.tag-pill {
+  @apply border border-hairline px-2.5 py-1 font-mono text-[10px] uppercase tracking-wide text-bone-dim;
+}
+
+/* ===================== SCROLL CUE ===================== */
+@keyframes bob {
+  0%,
+  100% {
+    transform: rotate(45deg) translate(0, 0);
+  }
+  50% {
+    transform: rotate(45deg) translate(4px, 4px);
+  }
+}
+
+.chevron-bob {
+  animation: bob 1.8s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .chevron-bob {
+    animation: none;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}

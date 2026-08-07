@@ -1,0 +1,35 @@
+[
+  {
+    "id": "blog-1",
+    "slug": "why-we-teach-defense-before-power",
+    "title": "Why We Teach Defense Before Power",
+    "authorId": "coach-maya-gurung",
+    "authorName": "Maya Gurung",
+    "tag": "Technique",
+    "excerpt": "Every new member wants to hit hard on day one. Here's why we make them wait.",
+    "content": "Every new member wants to hit hard on day one. I understand it — that's what boxing looks like from the outside. But power without defense just means you'll get hit back harder, and the first time that happens, most people quit.\n\nAt Iron Bell, your first three weeks are stance, guard, and slipping a jab before you ever load up a cross. It feels slow. It is slow, on purpose.\n\nBy the time you're allowed to hit pads with real intent, your feet already know where to be when the shot lands. That's the difference between a fighter and someone who's just swinging.",
+    "publishedAt": "2026-06-02"
+  },
+  {
+    "id": "blog-2",
+    "slug": "conditioning-is-not-punishment",
+    "title": "Conditioning Is Not Punishment",
+    "authorId": "coach-sujan-rai",
+    "authorName": "Sujan Rai",
+    "tag": "Conditioning",
+    "excerpt": "A lot of gyms use burpees as a penalty. We don't, and here's the reasoning.",
+    "content": "A lot of gyms use conditioning drills as a punishment — show up late, drop and give me twenty. I don't run the floor that way, and I get asked why fairly often.\n\nConditioning isn't something you owe the gym for a mistake. It's the actual work that lets you fight a full three minutes without your arms turning to lead in round two. If you dread it, you'll do it badly, and it won't build anything.\n\nSo we frame it as training, not punishment, and we scale it to where you are. A beginner's conditioning block and a Fight Team member's conditioning block look nothing alike, but the intent is the same: build the engine before you need it.",
+    "publishedAt": "2026-06-18"
+  },
+  {
+    "id": "blog-3",
+    "slug": "twelve-years-in-a-garment-warehouse",
+    "title": "Twelve Years in a Garment Warehouse",
+    "authorId": "owner",
+    "authorName": "Owner, Iron Bell Boxing Club",
+    "tag": "Club News",
+    "excerpt": "A short note on how this gym started, and what hasn't changed since.",
+    "content": "Iron Bell opened in 2014 in a repurposed garment warehouse with one heavy bag and a schedule taped to the door. We didn't have a front desk. We didn't really have a front door that closed properly, if I'm honest.\n\nTwelve years later we have real equipment, a real schedule, and a roster of coaches I'd trust with my own training. What hasn't changed is the standard: we teach boxing as a craft, not a workout class wearing gloves.\n\nThank you to everyone who trained here when it was still just a warehouse. This club exists because you kept showing up.",
+    "publishedAt": "2026-07-01"
+  }
+]

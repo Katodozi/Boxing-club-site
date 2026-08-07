@@ -1,0 +1,32 @@
+[
+  {
+    "id": "news-1",
+    "slug": "sujata-lama-title-fight-announced",
+    "title": "Sujata Lama's Title Fight Announced for October",
+    "category": "Fight Announcement",
+    "excerpt": "Fight Team member Sujata Lama has been confirmed for a national title bout this October.",
+    "content": "Fight Team member Sujata Lama has been confirmed for a national title bout this October in Pokhara. Sujata has trained at Iron Bell since 2019 and moved up to the Fight Team roster last year after a clean amateur record.\n\nA watch party will be held at the gym on fight night. Details on tickets and streaming will be posted closer to the date. Come support the corner.",
+    "eventDate": "2026-10-17",
+    "publishedAt": "2026-07-20"
+  },
+  {
+    "id": "news-2",
+    "slug": "dashain-holiday-schedule-notice",
+    "title": "Dashain Holiday Schedule Notice",
+    "category": "Notice",
+    "excerpt": "Iron Bell will run a reduced schedule during the Dashain holiday period. Details inside.",
+    "content": "Iron Bell will run a reduced class schedule during the Dashain holiday period. Basic and Amateur evening classes will continue as normal, but Friday sparring sessions will be paused for two weeks.\n\nThe front desk will also be closed on the main Dashain holidays. Fight Team members should coordinate directly with their coach for training access during this period. We'll post the exact closure dates on this page as they're confirmed.",
+    "eventDate": "2026-10-05",
+    "publishedAt": "2026-07-15"
+  },
+  {
+    "id": "news-3",
+    "slug": "open-gym-seminar-with-coach-maya",
+    "title": "Open Gym Seminar with Coach Maya — All Levels Welcome",
+    "category": "Event",
+    "excerpt": "A free Saturday seminar on defensive fundamentals, open to members and first-time visitors.",
+    "content": "We're running a free open seminar this Saturday, led by Head Coach Maya Gurung, focused entirely on defensive fundamentals — guard, slipping, and rolling under pressure.\n\nThis session is open to current members and first-time visitors alike, regardless of experience. Gloves and wraps will be provided. Space is limited, so let the front desk know if you're planning to attend.",
+    "eventDate": "2026-08-15",
+    "publishedAt": "2026-08-01"
+  }
+]

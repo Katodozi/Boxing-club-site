@@ -1,0 +1,29 @@
+[
+  {
+    "id": "coach-maya-gurung",
+    "name": "Maya Gurung",
+    "role": "Head Coach · Former National Amateur Finalist",
+    "corner": "red",
+    "initials": "MG",
+    "bio": "Maya has run the floor at Iron Bell since 2016. She fought as an amateur for eight years before turning to full-time coaching, and still spars twice a week to keep her eye sharp. Her focus is footwork and defense first, power later.",
+    "quote": "Footwork first. If your feet are wrong, nothing after that matters."
+  },
+  {
+    "id": "coach-sujan-rai",
+    "name": "Sujan Rai",
+    "role": "Strength & Conditioning",
+    "corner": "blue",
+    "initials": "SR",
+    "bio": "Sujan built the conditioning program at Iron Bell from scratch, drawing on his background as a track athlete. He believes most fights are lost to fatigue long before they're lost to skill.",
+    "quote": "You don't get tired in the ring. You get tired here, so the ring feels easy."
+  },
+  {
+    "id": "coach-dev-thapa",
+    "name": "Dev Thapa",
+    "role": "Fundamentals & Youth Program",
+    "corner": "red",
+    "initials": "DT",
+    "bio": "Dev runs the 21-day Fundamentals program and the Saturday-adjacent youth classes. He's trained more first-time boxers than anyone on staff and has a reputation for patience.",
+    "quote": "Everyone in this gym was a beginner. Some of them just showed up more."
+  }
+]
