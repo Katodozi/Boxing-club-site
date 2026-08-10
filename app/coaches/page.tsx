@@ -4,7 +4,7 @@ import CoachCard from "@/components/CoachCard";
 import { getCoaches } from "@/lib/coaches";
 import { getBlogs } from "@/lib/blogs";
 
-export const metadata = { title: "Coaches — Iron Bell Boxing Club" };
+export const metadata = { title: "Coaches — MaxX Boxing Club" };
 
 export default async function CoachesPage() {
   const [coaches, blogs] = await Promise.all([getCoaches(), getBlogs()]);

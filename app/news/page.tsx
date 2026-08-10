@@ -3,7 +3,7 @@ import PageBanner from "@/components/PageBanner";
 import NewsCard from "@/components/NewsCard";
 import { getNewsPosts } from "@/lib/news";
 
-export const metadata = { title: "News — Iron Bell Boxing Club" };
+export const metadata = { title: "News — MaxX Boxing Club" };
 
 export default async function NewsPage() {
   const posts = await getNewsPosts();

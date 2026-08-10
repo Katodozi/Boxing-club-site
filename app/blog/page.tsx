@@ -5,7 +5,7 @@ import BlogCard from "@/components/BlogCard";
 import { getBlogs } from "@/lib/blogs";
 import { getCoaches } from "@/lib/coaches";
 
-export const metadata = { title: "Blog — Iron Bell Boxing Club" };
+export const metadata = { title: "Blog — MaxX Boxing Club" };
 
 export default async function BlogPage({
   searchParams,

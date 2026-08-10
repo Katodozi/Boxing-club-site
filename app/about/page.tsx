@@ -3,7 +3,7 @@ import PageBanner from "@/components/PageBanner";
 import StatCounter from "@/components/StatCounter";
 import { getCoaches } from "@/lib/coaches";
 
-export const metadata = { title: "About — Iron Bell Boxing Club" };
+export const metadata = { title: "About — MaxX Boxing Club" };
 
 const PILLARS = [
   {

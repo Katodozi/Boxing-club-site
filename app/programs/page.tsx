@@ -3,7 +3,7 @@ import PageBanner from "@/components/PageBanner";
 import { GloveIcon, TargetIcon, KettlebellIcon, FistsIcon } from "@/components/ProgramIcons";
 import { PROGRAMS } from "@/lib/programs";
 
-export const metadata = { title: "Programs — Iron Bell Boxing Club" };
+export const metadata = { title: "Programs — MaxX Boxing Club" };
 
 const ICONS = {
   glove: <GloveIcon />,

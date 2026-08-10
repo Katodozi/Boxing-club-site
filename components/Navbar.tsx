@@ -41,7 +41,7 @@ export default function Navbar() {
       <div className="mx-auto flex max-w-[1180px] items-center justify-between px-6 py-4 sm:px-8">
         <Link href="/" className="font-display flex items-center gap-2.5 text-xl">
           <Logomark size={26} />
-          IRON <span className="text-corner-red">BELL</span>
+          MaxX <span className="text-corner-red">BOXING CLUB</span>
         </Link>
 
         <nav className="font-mono hidden items-center gap-8 text-xs text-bone-dim lg:flex">

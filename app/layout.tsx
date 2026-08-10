@@ -5,9 +5,9 @@ import JoinModalProvider from "@/components/JoinModalProvider";
 import SessionProviderWrapper from "@/components/SessionProviderWrapper";
 
 export const metadata: Metadata = {
-  title: "Iron Bell Boxing Club — Kathmandu",
+  title: "MaxX Boxing Club — Kathmandu",
   description:
-    "A boxing gym in Kathmandu training beginners and fighters under one roof since 2014. Fundamentals, technique, conditioning, sparring, and Fight Team.",
+    "A boxing gym in Lalitpur training beginners and fighters under one roof since 2014. Fundamentals, technique, conditioning, sparring, and Fight Team.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

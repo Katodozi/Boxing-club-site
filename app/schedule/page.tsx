@@ -2,7 +2,7 @@ import RevealOnScroll from "@/components/RevealOnScroll";
 import PageBanner from "@/components/PageBanner";
 import ScheduleTable from "@/components/ScheduleTable";
 
-export const metadata = { title: "Schedule — Iron Bell Boxing Club" };
+export const metadata = { title: "Schedule — MaxX Boxing Club" };
 
 export default function SchedulePage() {
   return (
