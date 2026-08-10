@@ -10,7 +10,7 @@ export default async function NewsPage() {
 
   return (
     <div className="pt-28">
-      <PageBanner round="07" tone="red" imageSrc="/banners/news.jpg"/>
+      <PageBanner round="07" tone="red" imageSrc="/banners/new.jpg"/>
       <div className="pb-28 pt-14">
       <div className="mx-auto max-w-[1180px] px-6 sm:px-8">
         <RevealOnScroll className="mb-16 max-w-2xl">
