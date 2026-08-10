@@ -1,4 +1,5 @@
 import RevealOnScroll from "@/components/RevealOnScroll";
+import PageBanner from "@/components/PageBanner";
 import StatCounter from "@/components/StatCounter";
 import { getCoaches } from "@/lib/coaches";
 
@@ -23,7 +24,9 @@ export default async function AboutPage() {
   const coaches = await getCoaches();
 
   return (
-    <div className="pt-40 pb-28">
+    <div className="pt-28">
+      <PageBanner round="01" tone="red" imageSrc="/banners/about.jpg" />
+      <div className="pb-28 pt-14">
       <div className="mx-auto max-w-[1180px] px-6 sm:px-8">
         <RevealOnScroll className="mb-16 max-w-2xl">
           <p className="font-mono mb-4 text-xs text-brass-bright">Round 01 — About</p>
@@ -82,6 +85,7 @@ export default async function AboutPage() {
             ))}
           </div>
         </div>
+      </div>
       </div>
     </div>
   );

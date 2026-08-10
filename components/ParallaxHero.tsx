@@ -1,8 +1,8 @@
 "use client";
 
 import { useRef } from "react";
+import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
-import FighterSilhouette from "./FighterSilhouette";
 import { useJoinModal } from "./JoinModalProvider";
 
 export default function ParallaxHero() {
@@ -41,13 +41,31 @@ export default function ParallaxHero() {
         <span className="absolute left-[-5%] right-[-5%] top-[74%] h-px bg-hairline" />
       </div>
 
-      {/* fighter silhouette, parallaxed, blended into the hero via mask + gradient */}
+      {/* fighter photo, parallaxed, blended into the hero via mask (no hard edges) */}
       <motion.div
         style={{ y: yFighter }}
-        className="pointer-events-none absolute inset-y-0 right-0 hidden w-[42%] max-w-[560px] md:block"
+        className="pointer-events-none absolute inset-y-0 right-0 mr-12 hidden w-[42%] max-w-[560px] md:block md:mr-58 lg:mr-80"
         aria-hidden="true"
       >
-        <FighterSilhouette className="h-full w-full" />
+        <div
+          className="relative h-full w-full"
+          style={{
+            WebkitMaskImage:
+              "linear-gradient(to bottom, black 55%, transparent 96%), linear-gradient(to right, transparent 0%, black 18%, black 100%)",
+            WebkitMaskComposite: "source-in",
+            maskImage:
+              "linear-gradient(to bottom, black 55%, transparent 96%), linear-gradient(to right, transparent 0%, black 18%, black 100%)",
+            maskComposite: "intersect",
+          }}
+        >
+          <Image
+            src="/Maxx.png"
+            alt=""
+            fill
+            className="object-contain object-bottom"
+            priority
+          />
+        </div>
       </motion.div>
 
       <motion.div

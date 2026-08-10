@@ -1,11 +1,14 @@
 import RevealOnScroll from "@/components/RevealOnScroll";
+import PageBanner from "@/components/PageBanner";
 import ScheduleTable from "@/components/ScheduleTable";
 
 export const metadata = { title: "Schedule — Iron Bell Boxing Club" };
 
 export default function SchedulePage() {
   return (
-    <div className="pt-40 pb-28">
+    <div className="pt-28">
+      <PageBanner round="04" tone="blue" imageSrc="/banners/schedules.jpg"/>
+      <div className="pb-28 pt-14">
       <div className="mx-auto max-w-[1180px] px-6 sm:px-8">
         <RevealOnScroll className="mb-16 max-w-2xl">
           <p className="font-mono mb-4 text-xs text-brass-bright">Round 04 — Schedule</p>
@@ -21,6 +24,7 @@ export default function SchedulePage() {
         <RevealOnScroll delay={0.1}>
           <ScheduleTable />
         </RevealOnScroll>
+      </div>
       </div>
     </div>
   );

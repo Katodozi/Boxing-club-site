@@ -1,4 +1,5 @@
 import RevealOnScroll from "@/components/RevealOnScroll";
+import PageBanner from "@/components/PageBanner";
 import NewsCard from "@/components/NewsCard";
 import { getNewsPosts } from "@/lib/news";
 
@@ -8,7 +9,9 @@ export default async function NewsPage() {
   const posts = await getNewsPosts();
 
   return (
-    <div className="pt-40 pb-28">
+    <div className="pt-28">
+      <PageBanner round="07" tone="red" imageSrc="/banners/news.jpg"/>
+      <div className="pb-28 pt-14">
       <div className="mx-auto max-w-[1180px] px-6 sm:px-8">
         <RevealOnScroll className="mb-16 max-w-2xl">
           <p className="font-mono mb-4 text-xs text-brass-bright">Round 07 — News</p>
@@ -31,6 +34,7 @@ export default async function NewsPage() {
             ))}
           </div>
         )}
+      </div>
       </div>
     </div>
   );

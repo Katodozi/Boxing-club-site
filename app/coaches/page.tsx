@@ -1,4 +1,5 @@
 import RevealOnScroll from "@/components/RevealOnScroll";
+import PageBanner from "@/components/PageBanner";
 import CoachCard from "@/components/CoachCard";
 import { getCoaches } from "@/lib/coaches";
 import { getBlogs } from "@/lib/blogs";
@@ -9,7 +10,9 @@ export default async function CoachesPage() {
   const [coaches, blogs] = await Promise.all([getCoaches(), getBlogs()]);
 
   return (
-    <div className="pt-40 pb-28">
+    <div className="pt-28">
+      <PageBanner round="03" tone="red" imageSrc="/banners/coaching.jpg"/>
+      <div className="pb-28 pt-14">
       <div className="mx-auto max-w-[1180px] px-6 sm:px-8">
         <RevealOnScroll className="mb-16 max-w-2xl">
           <p className="font-mono mb-4 text-xs text-brass-bright">Round 03 — Coaches</p>
@@ -31,6 +34,7 @@ export default async function CoachesPage() {
             );
           })}
         </div>
+      </div>
       </div>
     </div>
   );

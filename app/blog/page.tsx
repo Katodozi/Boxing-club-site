@@ -1,4 +1,5 @@
 import RevealOnScroll from "@/components/RevealOnScroll";
+import PageBanner from "@/components/PageBanner";
 import Link from "next/link";
 import BlogCard from "@/components/BlogCard";
 import { getBlogs } from "@/lib/blogs";
@@ -17,7 +18,9 @@ export default async function BlogPage({
   const filterCoach = author ? coaches.find((c) => c.id === author) : undefined;
 
   return (
-    <div className="pt-40 pb-28">
+    <div className="pt-28">
+      <PageBanner round="06" tone="blue" imageSrc="/banners/blog.jpg"/>
+      <div className="pb-28 pt-14">
       <div className="mx-auto max-w-[1180px] px-6 sm:px-8">
         <RevealOnScroll className="mb-16 max-w-2xl">
           <p className="font-mono mb-4 text-xs text-brass-bright">Round 06 — Blog</p>
@@ -47,6 +50,7 @@ export default async function BlogPage({
             ))}
           </div>
         )}
+      </div>
       </div>
     </div>
   );

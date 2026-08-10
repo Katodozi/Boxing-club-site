@@ -1,4 +1,5 @@
 import RevealOnScroll from "@/components/RevealOnScroll";
+import PageBanner from "@/components/PageBanner";
 import { GloveIcon, TargetIcon, KettlebellIcon, FistsIcon } from "@/components/ProgramIcons";
 import { PROGRAMS } from "@/lib/programs";
 
@@ -20,7 +21,9 @@ const LEVEL_STYLES: Record<string, string> = {
 
 export default function ProgramsPage() {
   return (
-    <div className="pt-40 pb-28">
+    <div className="pt-28">
+      <PageBanner round="02" tone="blue" imageSrc="/banners/program.jpg"/>
+      <div className="pb-28 pt-14">
       <div className="mx-auto max-w-[1180px] px-6 sm:px-8">
         <RevealOnScroll className="mb-16 max-w-2xl">
           <p className="font-mono mb-4 text-xs text-brass-bright">Round 02 — Programs</p>
@@ -57,6 +60,7 @@ export default function ProgramsPage() {
             </RevealOnScroll>
           ))}
         </div>
+      </div>
       </div>
     </div>
   );
