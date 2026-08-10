@@ -19,7 +19,7 @@ export default async function BlogPage({
 
   return (
     <div className="pt-28">
-      <PageBanner round="06" tone="blue" imageSrc="/banners/blog.jpg"/>
+      <PageBanner round="06" tone="blue" imageSrc="/banners/blogs.jpg"/>
       <div className="pb-28 pt-14">
       <div className="mx-auto max-w-[1180px] px-6 sm:px-8">
         <RevealOnScroll className="mb-16 max-w-2xl">

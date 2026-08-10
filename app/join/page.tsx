@@ -25,7 +25,7 @@ export default function JoinPage() {
 
   return (
     <div className="pt-28">
-      <PageBanner round="05" tone="red" imageSrc="/banners/join.jpg"/>
+      <PageBanner round="05" tone="red" imageSrc="/banners/joins.jpg"/>
       <div className="pb-28 pt-14">
       <div className="mx-auto max-w-[1180px] px-6 sm:px-8">
         <RevealOnScroll className="mb-16 max-w-2xl">
