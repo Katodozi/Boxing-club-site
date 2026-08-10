@@ -41,7 +41,7 @@ export default function ParallaxHero() {
         <span className="absolute left-[-5%] right-[-5%] top-[74%] h-px bg-hairline" />
       </div>
 
-      {/* fighter photo, parallaxed, blended into the hero via mask (no hard edges) */}
+      {/* fighter photo — desktop only: absolutely positioned on the right, parallaxed, blended via mask */}
       <motion.div
         style={{ y: yFighter }}
         className="pointer-events-none absolute inset-y-0 right-0 mr-12 hidden w-[42%] max-w-[560px] md:block md:mr-58 lg:mr-80"
@@ -58,13 +58,7 @@ export default function ParallaxHero() {
             maskComposite: "intersect",
           }}
         >
-          <Image
-            src="/Maxx.png"
-            alt=""
-            fill
-            className="object-contain object-bottom"
-            priority
-          />
+          <Image src="/Maxx.png" alt="" fill className="object-contain object-bottom" priority />
         </div>
       </motion.div>
 
@@ -84,6 +78,19 @@ export default function ParallaxHero() {
           <br />
           <span className="text-bone-dim">earn it.</span>
         </h1>
+
+        {/* fighter photo — mobile only: normal in-flow image right after the heading, no parallax */}
+        <div className="relative mt-8 aspect-[4/5] w-full max-w-xs md:hidden">
+          <div
+            className="relative h-full w-full"
+            style={{
+              WebkitMaskImage: "linear-gradient(to bottom, black 65%, transparent 100%)",
+              maskImage: "linear-gradient(to bottom, black 65%, transparent 100%)",
+            }}
+          >
+            <Image src="/Maxx.png" alt="" fill className="object-contain object-bottom" priority />
+          </div>
+        </div>
 
         <p className="mt-8 max-w-md text-lg text-bone-dim">
           Fundamentals to fight night — boxing, strength, and controlled sparring, taught by
