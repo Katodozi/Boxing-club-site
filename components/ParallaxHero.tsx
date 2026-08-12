@@ -44,7 +44,7 @@ export default function ParallaxHero() {
       {/* fighter photo — desktop only: absolutely positioned on the right, parallaxed, blended via mask */}
       <motion.div
         style={{ y: yFighter }}
-        className="pointer-events-none absolute inset-y-0 right-0 mr-12 hidden w-[42%] max-w-[560px] md:block md:mr-58 lg:mr-80"
+        className="pointer-events-none absolute inset-y-0 right-0 mr-8 hidden w-[42%] max-w-[560px] md:block md:mr-28 lg:mr-36"
         aria-hidden="true"
       >
         <div
