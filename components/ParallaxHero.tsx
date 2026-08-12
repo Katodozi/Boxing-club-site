@@ -47,7 +47,7 @@ export default function ParallaxHero() {
         className="
   pointer-events-none
   absolute
-  top-20
+  top-24
   bottom-0
   right-0
   mr-8
