@@ -9,13 +9,15 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "seed:hash": "node scripts/hash-password.js"
+    "seed:hash": "node scripts/hash-password.js",
+    "seed:redis": "node scripts/seed-redis.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "private": "true",
   "dependencies": {
+    "@upstash/redis": "^1.38.2",
     "@vercel/analytics": "^2.0.1",
     "bcryptjs": "^2.4.3",
     "clsx": "^2.1.1",
